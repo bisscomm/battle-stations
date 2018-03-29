@@ -207,22 +207,7 @@ var StatusList = React.createClass({
                 ]
                 )
         }.bind(this));
-        if (items.length)
-            apiStatuses = [
-            e('hr',{key : 'hr'}),
-            e('h2',{},'Reachability of APIs'),
-            e('p',{},'Please note: This only reflects the reachability of our APIs from your computer.'),
-            e('ul',{key : 'statuses',className : 'list-group'},items),
-            e('a',{'href' : newIssueUrl},'report an incident')
-            ];
-        return e('div',null,
-            [
-            e(IssuesList,{key : 'issues',issues : this.state.issues,
-                          refreshing : this.state.refreshing,
-                          error : this.state.error,
-                          refreshIssues : this.refreshIssues}),
-            apiStatuses
-            ])
+       
     }
 
 })
