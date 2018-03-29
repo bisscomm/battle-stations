@@ -21,7 +21,7 @@ var apis = {
 };
 
 //Replace this with your status page project name
-var githubProject = 'bisscomm/status';
+var githubProject = 'hernikplays/hernikplays-website';
 
 //Github URLs
 var issuesApiUrl = 'https://api.github.com/repos/'+githubProject+'/issues?limit=100&sort=created&direction=desc&state=all'
